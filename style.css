@@ -1,0 +1,314 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+
+}
+    
+ 
+ body
+ {
+  opacity: 1;
+      color: #ededed;
+ }
+ .header
+ {
+     position: static;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 20px 10%;
+     background: transparent;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 100;
+     background-color: black;
+}
+.logo 
+{
+position: relative;
+font-size: 35px;
+color: floralwhite;
+text-decoration: none;
+font-weight: 600;
+}
+
+.navbar a
+{
+display: inline-block;
+font-size:25px;
+color: blanchedalmond;
+text-decoration: none ;
+font-weight: 500;
+margin-left: 35px;
+transition: .3s; 
+animation: slideTop .5s ease forwards;
+
+}
+.navbar a:hover
+{
+    color: aqua;
+}
+.Home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: black;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content
+{
+    font-size:35;
+    font-weight: 700;
+    margin: -3px 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+@keyframes slideTop {
+0%{
+    transform:translateY(-100px);
+    opacity: 0;
+}
+100%{
+    transform: translateY(0px);
+    opacity: 1;
+}
+}
+@keyframes slideRight {
+    0%{
+        transform:translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.About {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color : black;
+    height:200px;
+}
+.section-title{
+  color: #2c4964;
+  font-size: 26px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.section-title h2{
+  padding-bottom: 10px;
+}
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 20px; ;
+    margin-bottom: 20px;
+    color: #4b7dab;
+    font-family: "Pop pins", sans-serif;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #ea6895;
+    margin-left: 20px; 
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background:rgb(167, 232, 242);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+    color: black;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #ea6895;
+  }
+  .resume .resume-item p
+  {
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 10px ;
+  }
+
+  .row{
+    display: flex;
+  }
+
+  .column-1{
+    padding: 40 ;
+  }
+
+  .column-2{
+    padding: 40 ;
+  }
+ .skills-content{
+background-color: black;
+height: 500px;
+
+
+ }
+  .skills .progress {
+    height: 50px;
+    display: block;
+    background: none;
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+  
+  .skills .progress .skill {
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #2c4964;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: #fbeaf1;
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    margin-right: 50px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #dd5a92;
+  } 
+
+
+  .contact .contact-about h3 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    padding-left: 20px;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: aqua;
+  }
+  
+  .contact .contact-about p {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom:20px;
+    line-height: 24px;
+    font-family: "Playfair Display", serif;
+    color: #3c6387;
+  }
+  
+  .contact .social-links {
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  .contact .social-links a {
+    font-size: 25px;
+    display: inline-block;
+    background: #fff;
+    color: #d43076;
+    line-height: 0;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #d43076;
+  }
+  
+  .contact .social-links a:hover {
+    background:aqua;
+    color: #fff;
+  }
+  
+  .contact .info {
+    color: #5a656e;
+  }
+  
+  
+
+  #list {
+    list-style: none;
+    background-color: white;
+    height: 200px;
+  }
+  .final {
+    margin-bottom: 10px;
+  }
+  #details {
+   position : relative;
+   left : 600px;
+   color : black;
+   
+  }
+  #home {
+    text-decoration:underline;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+.footer{
+  background-color: white;
+}
